@@ -1,8 +1,4 @@
-/*
-    Document   : app_style.css
-    Author     : Louie Zhu
-    Description: External style sheet for the application.
-*/
+
 
 * {
 	font-family:Verdana, Geneva, sans-serif;
@@ -84,7 +80,7 @@ div#wrapper {
 
 /* styles for the main body, which displays page specific content. */
 #mainbody {
-    width:960px;
+    width:80%;
     padding: 0px 10px;
     background-color: white;
     border-left: 1px solid gray;
