@@ -1,0 +1,243 @@
+/*
+    Document   : app_style.css
+    Author     : Louie Zhu
+    Description: External style sheet for the application.
+*/
+
+* {
+	font-family:Verdana, Geneva, sans-serif;
+        color: black;
+}
+
+body{
+    text-align: center;
+    background-color: white;
+    width: 100%;
+    margin: 0 auto;    
+}
+
+div#wrapper {
+    text-align:left;
+    width: 80%;
+    /*margin:0 auto;*/
+    
+    margin-left:0;
+    margin-right: auto;
+}
+
+/* styles for the div that displays the current date */
+#curdate {
+    text-align:right;
+    margin: 3px 10px;
+    color: white;
+}
+
+#banner {
+    width:125%;
+    height: 150px;
+    background-color: black;
+    padding: 0px;
+    color:white;
+    
+   /* border-left: 1px solid gray;
+    border-top: 1px solid gray;
+    border-right: 1px solid gray;
+
+    border-top-left-radius: 15px;
+    -webkit-border-top-left-radius: 15px;
+    -moz-border-radius-topleft: 15px;
+
+    border-top-right-radius: 15px;
+    -webkit-border-top-right-radius: 15px;
+    -moz-border-radius-topright: 15px;*/
+}
+
+/*styles for the page footer */
+#footer {
+    width:980px;
+    text-align: center;
+    font-size: 80%;
+    font-family: 'Times New Roman',Times,serif;
+
+    padding-bottom: 15px;
+    background-color: white;
+
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+
+    border-bottom-right-radius: 15px;
+    -webkit-border-bottom-right-radius: 15px;
+    -moz-border-radius-bottomright: 15px;
+
+    border-bottom-left-radius: 15px;
+    -webkit-border-bottom-left-radius: 15px;
+    -moz-border-radius-bottomleft: 15px;
+}
+
+/*sytle for the banner */
+#logo{
+    width: 510px;
+    margin-top: 30px;
+    text-align: right;
+}
+
+/* styles for the main body, which displays page specific content. */
+#mainbody {
+    width:960px;
+    padding: 0px 10px;
+    background-color: white;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+#mainbody a{
+    text-decoration: none;
+    color: #393ECE;
+}
+
+#mainbody a:hover,
+#mainbody a:active,
+#mainbody a:focus
+{
+    text-decoration: underline;
+    color: #FF9A35;
+}
+
+table#list {
+    width: 100%;
+    text-align: left;
+    margin-top: 6px;
+    margin-bottom: 5px;
+    padding-bottom: 20px;
+    border-top: 2px solid #FF9A35;
+    border-bottom: 2px solid #FF9A35;
+    border-collapse: collapse;
+}
+
+table#list th, table#list td {
+    padding: 3px;
+}
+
+table#list th {
+    border-bottom: 1px solid #FF9A35;
+}
+
+table#list th.hilite1 {
+    background-color: wheat;
+}
+
+table#list th.hilite2 {
+    background-color: yellow;
+}
+
+/*background color for alternate rows */
+table#list .alt_background {
+    background-color: #EEEEEE;
+}
+
+#detail {
+    height: 330px;
+    margin-top: 6px;
+    border-bottom: solid 1px #000;
+    margin-bottom: 5px;
+}
+
+#detail .image {
+    display: inline-block;
+    width: 220px;
+    height: 325px;
+    float: left;
+}
+
+#detail>table {
+    display: inline-block;
+    width: 700px;
+    height: 285px;
+    border-collapse: collapse;
+    vertical-align: top;
+    margin-left: 8px;
+}
+
+#detail>table td {
+    padding: 5px;
+}
+
+#detail .heading {
+    width: 110px;
+}
+
+#detail .description {
+    vertical-align: top;
+}
+
+#detail .buttons {
+    display: inline-block;
+    width: 700px;
+    margin: 5px 0 15px 8px;
+}
+/*styles for the page header that appears right below the banner*/
+#main_header {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid black;
+    color: #ff6600;
+}
+
+/* style for the search bar */
+#searchbar {
+    float: right;
+    margin-top: 10px;
+    position: relative;
+}
+
+#searchbar #title {
+    width: 130px;  
+}
+
+/*styles for the thumbnails on the homepage */
+#thumbnails a {
+    text-decoration: none;
+}
+
+#thumbnails a:hover {
+    text-decoration: none;
+}
+
+#thumbnails img {
+    border: 3px solid #448C9A;
+
+    margin: 5px;
+    padding: 1px;
+    width: 150px;
+
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+
+#thumbnails img:hover {
+    border: 6px solid #393ECE;
+    margin: 2px
+}
+
+/* styles for the suggestion div block */
+#suggestionDiv {
+    position: absolute;
+    right: 0;
+}
+
+/* styles for the table displayed inside the suggestion div block */
+#suggestionDiv table {
+    width: 176px;
+    color: #000;
+    border: 1px solid #FF9A35;
+}
+
+#suggestionDiv td:hover {
+    background-color: #FF9A35;
+}
