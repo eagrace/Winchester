@@ -1,7 +1,9 @@
-
+/*
+*/
 
 * {
 	font-family:Verdana, Geneva, sans-serif;
+        
         color: black;
 }
 
@@ -16,7 +18,6 @@ div#wrapper {
     text-align:left;
     width: 80%;
     /*margin:0 auto;*/
-    
     margin-left:0;
     margin-right: auto;
 }
@@ -24,33 +25,73 @@ div#wrapper {
 /* styles for the div that displays the current date */
 #curdate {
     text-align:right;
-    margin: 3px 10px;
+    margin: 4px 12px;
     color: white;
 }
 
 #banner {
     width:125%;
-    height: 150px;
-    background-color: black;
-    padding: 0px;
+    height: 160px;
+    /*background-color: black;*/
+    padding-right: 40%;/*this is being overwritten by some attribute..*/
     color:white;
+    background-color: rgb(0,0,0); /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzAxMDEwMSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjY5JSIgc3RvcC1jb2xvcj0iIzBhMGEwYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjgzJSIgc3RvcC1jb2xvcj0iIzE5MTkxOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijk2JSIgc3RvcC1jb2xvcj0iIzM4MzgzOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(1,1,1,1) 50%, rgba(10,10,10,1) 69%, rgba(25,25,25,1) 83%, rgba(56,56,56,1) 96%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,1)), color-stop(50%,rgba(1,1,1,1)), color-stop(69%,rgba(10,10,10,1)), color-stop(83%,rgba(25,25,25,1)), color-stop(96%,rgba(56,56,56,1)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(1,1,1,1) 50%,rgba(10,10,10,1) 69%,rgba(25,25,25,1) 83%,rgba(56,56,56,1) 96%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(1,1,1,1) 50%,rgba(10,10,10,1) 69%,rgba(25,25,25,1) 83%,rgba(56,56,56,1) 96%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(1,1,1,1) 50%,rgba(10,10,10,1) 69%,rgba(25,25,25,1) 83%,rgba(56,56,56,1) 96%,rgba(0,0,0,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(1,1,1,1) 50%,rgba(10,10,10,1) 69%,rgba(25,25,25,1) 83%,rgba(56,56,56,1) 96%,rgba(0,0,0,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=0 ); /* IE6-8 */    
+}
+
+#banner, #logo  {
+    padding: 10px;
+    /*font-family:*/ 
+}
+
+#nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: shadow;
+    font-size:18px;
     
-   /* border-left: 1px solid gray;
-    border-top: 1px solid gray;
-    border-right: 1px solid gray;
-
-    border-top-left-radius: 15px;
-    -webkit-border-top-left-radius: 15px;
-    -moz-border-radius-topleft: 15px;
-
-    border-top-right-radius: 15px;
-    -webkit-border-top-right-radius: 15px;
-    -moz-border-radius-topright: 15px;*/
+}
+#nav a:hover{
+    color:#0cf;
+}
+#shoppingcart   {
+    float:right;
+    background-color:#6cf;
+    padding: .2%;
+    margin:.7%;
+}
+#nav #shoppingcart a:hover   {
+    color: red;
+}
+#nav ul li a{
+    color:white;
+    font-size: 14px;
+}
+#nav{
+   /* background-color: red;*/
+    width: 10%;
+    float: right;
+}
+#nav ul{
+    clear:left;
 }
 
 /*styles for the page footer */
 #footer {
-    width:980px;
+
+    width:960px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: 19%;
+    margin-right: 25%;    
     text-align: center;
     font-size: 80%;
     font-family: 'Times New Roman',Times,serif;
@@ -58,35 +99,30 @@ div#wrapper {
     padding-bottom: 15px;
     background-color: white;
 
-    border-left: 1px solid gray;
-    border-right: 1px solid gray;
-    border-bottom: 1px solid gray;
-
-    border-bottom-right-radius: 15px;
-    -webkit-border-bottom-right-radius: 15px;
-    -moz-border-radius-bottomright: 15px;
-
-    border-bottom-left-radius: 15px;
-    -webkit-border-bottom-left-radius: 15px;
-    -moz-border-radius-bottomleft: 15px;
+    -webkit-box-shadow: -1px 18px 10px 0px rgba(0,0,0,0.67);
+    -moz-box-shadow: -1px 18px 10px 0px rgba(0,0,0,0.67);
+    box-shadow: -1px 18px 10px 0px rgba(0,0,0,0.67);
 }
 
 /*sytle for the banner */
 #logo{
-    width: 510px;
-    margin-top: 30px;
+    width: 600px;
+    margin-top: 0px;
     text-align: right;
+    /*background-color: yellow;*/
 }
 
 /* styles for the main body, which displays page specific content. */
 #mainbody {
-    width:80%;
-    padding: 0px 10px;
+    width:960px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: 19%;
+    margin-right: 25%;
     background-color: white;
-    border-left: 1px solid gray;
-    border-right: 1px solid gray;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
+    -webkit-box-shadow: -1px 18px 10px 0px rgba(0,0,0,0.67);
+    -moz-box-shadow: -1px 18px 10px 0px rgba(0,0,0,0.67);
+    box-shadow: -1px 18px 10px 0px rgba(0,0,0,0.67);
 }
 
 #mainbody a{
@@ -176,12 +212,12 @@ table#list .alt_background {
 }
 /*styles for the page header that appears right below the banner*/
 #main_header {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bold;
     margin-top: 15px;
     margin-bottom: 15px;
-    border-bottom: 1px solid black;
-    color: #ff6600;
+    border-bottom: 2px solid black;
+    color: #666666;
 }
 
 /* style for the search bar */
@@ -205,19 +241,15 @@ table#list .alt_background {
 }
 
 #thumbnails img {
-    border: 3px solid #448C9A;
 
     margin: 5px;
     padding: 1px;
     width: 150px;
-
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
+    border-right: 2px solid black;
 }
 
 #thumbnails img:hover {
-    border: 6px solid #393ECE;
+    border: 4px solid black;
     margin: 2px
 }
 
@@ -236,4 +268,26 @@ table#list .alt_background {
 
 #suggestionDiv td:hover {
     background-color: #FF9A35;
+}
+
+/*this is all the styling for main page image slider*/
+#myreel{ /*sample CSS for demo*/
+border:14px solid black;
+
+}
+
+.paginate{
+width: 838px;
+margin-left: 10%;
+margin-right: auto;
+font:bold 14px sans-serif;
+text-align:center;
+border:12px solid black;
+background-color: black;
+
+}
+.paginate a{
+    text-decoration: none;
+    color:white;
+    font-size: 12px;
 }

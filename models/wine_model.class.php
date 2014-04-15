@@ -104,7 +104,7 @@ class WineModel {
     }
 
     //search the database for wines that match words in name. Return an array of wines if succeed; false otherwise.
-    public function search_wine($title) {
+    public function search_wine($name) {
         //select statement
         $sql = "SELECT * FROM " . $this->db->getWineTable() . " WHERE name LIKE '%" . $name . "%'";
 

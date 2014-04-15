@@ -157,7 +157,7 @@ class BeerModel {
         $Image_file = isset($_POST['Image_file']) && ($_POST['Image_file'] != "") ? $_POST['Image_file'] : null;
 
         //make sure none of them is null
-        if ($name && $short_description && $price_32 && $ABV && $IBU && $Image_file) {
+        if ($name && $short_description && $price_32 && $ABV && $IBU /*&& $Image_file*/) {
             //query string for update 
             $sql = "UPDATE " . $this->db->getBeerTable() .
                    " SET name='$name', short_description='$short_description', price_32='$price_32', ABV='$ABV', IBU='$IBU', long_description='$long_description', Image_file='$Image_file' WHERE id='$id'";

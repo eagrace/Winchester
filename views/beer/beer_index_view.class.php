@@ -10,8 +10,8 @@
 
 class BeerIndexView extends IndexView {
 
-    protected function displayHeader($name) {
-        parent::displayHeader($name);
+    protected function displayHeader($title) {
+        parent::displayHeader($title);
         ?>
         <script>
             var suggest_url = "<?= base_url ?>/beer/suggest/"; 

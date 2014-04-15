@@ -95,9 +95,9 @@ class BeerController {
     
     //search beers
     public function search($name) {
-        //retrieve title from a textbox named "title"
+        //retrieve name from a textbox named "title"
         if (isset($_GET['name']))
-            $title = trim($_GET['name']);
+            $name = trim($_GET['name']);
 
         //retrieve all beers and store them in an array
         if (($query = $this->beer_model->search_beer($name)) >= 0) {

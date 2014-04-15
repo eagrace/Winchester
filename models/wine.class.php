@@ -10,7 +10,6 @@
 class Wine {
 
     //private data members
-    //private $id, $title, $isbn, $publish_date, $publisher, $category, $image, $description;
     private $id, $name, $short_description, $price_750ml, $year, $long_description, $Image_file;
 
     public function __construct($name, $short_description, $price_750ml, $year, $long_description, $Image_file) {

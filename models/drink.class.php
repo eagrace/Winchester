@@ -7,30 +7,28 @@
  * Description: the Beer class models a real-world beer.
  */
 
-class Beer {
+class Drink {
 
     //private data members
-            private $id, $name, $short_description, $price_32, $ABV, $IBU, $long_description, $Image_file;
+            private $id, $drink_name, $drink_quantity, $price_per_drink, $user_name, $user_id;
 
     //the constructor
-    public function __construct($name, $short_description, $price_32, $ABV, $IBU, $long_description, $Image_file) {
-        $this->name = $name;
-        $this->short_description = $short_description;
-        $this->price_32 = $price_32;
-        $this->ABV = $ABV;
-        $this->IBU = $IBU;
-        $this->long_description = $long_description;
-        $this->Image_file = $Image_file;
+    public function __construct($drink_name, $beer, $wine, $count, $price_per_drink, $user_name, $user_id) {
+        $this->drink_name = $beer || $this->drink_name = $wine;
+        $this->drink_quantity = $count;
+        $this->price_per_drink = $price_per_drink;
+        self::$user_name;
+        self::$user_id;
     }
 
-    //return the id of a beer
+    //return the id of a drink (beer or wine)
     public function getId() {
         return $this->id;
     }
 
-    //return the name of a beer
-    public function getName() {
-        return $this->name;
+    //return the name of a drink
+    public function getDrinkName() {
+        return $this->drink_name;
     }
 
     //return the short description of a beer
@@ -56,10 +54,6 @@ class Beer {
     //return the long description of a beer
     public function getLong_Description() {
         return $this->long_description;
-    }
-    //return the image of a beer
-    public function getImage_File()  {
-        return $this->Image_file;
     }
 
     //set beer id
